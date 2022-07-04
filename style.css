@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Josefin+Sans:wght@300&family=Playfair+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-envelope {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: #333;
+  /* border-radius: 20px; */
+  position: absolute;
+  height: 55px;
+  width: 983px;
+  bottom: 80px;
+  left: 0px;
+  opacity: 0;
+  transform: translateX(400px);
+  box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.293);
+}
+
+.icons-link {
+  width: fit-content;
+  height: auto;
+  display: inline-block;
+  margin-right: 20px;
+  transition: 1s ease-in-out;
+}
+
+.icons-link:hover {
+  transition: 0.3s ease-in-out;
+  transform: translateY(-5px);
+}
+
+:root {
+  --naslovi-font: "Playfair Display", serif;
+}
+
+.main {
+  max-width: 1920px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.navigation-container {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.logo {
+  width: 20%;
+  padding-left: 5%;
+}
+
+.img-logo {
+  max-width: 80px;
+  width: 100%;
+  display: inline-block;
+  justify-content: start;
+}
+
+.logo,
+.nav-list {
+  display: flex;
+
+  align-items: center;
+}
+
+.nav-list {
+  width: 75%;
+  justify-content: end;
+  padding-right: 1%;
+}
+
+.nav-list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list-item {
+  letter-spacing: 5px;
+  width: fit-content;
+  padding: 0 40px 20px 40px;
+  font-size: 22px;
+  font-family: var(--naslovi-font);
+}
+
+.nav-item-link {
+  display: inline-block;
+  width: 100%;
+  color: white;
+}
+
+.header-container {
+  width: 100%;
+  min-height: 860px;
+  position: relative;
+  align-items: center;
+  background-image: url(backgroung-img-wal.jpg);
+  background-repeat: no-repeat;
+}
+.pic-container {
+  max-width: 322px;
+  width: 100%;
+  height: fit-content;
+  margin: 90px 0 0 40px;
+  z-index: 1;
+}
+
+.midle-head-container {
+  max-width: 900px;
+  min-height: 460px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  transform: translateY(15%);
+}
+
+.first-text {
+  margin-bottom: 10px;
+  font-size: 50px;
+  width: 100%;
+  text-align: start;
+  margin-left: 50px;
+  letter-spacing: 8px;
+  color: white;
+  font-family: var(--naslovi-font);
+}
+
+.second-text {
+  font-size: 30px;
+  margin-right: 20px;
+  letter-spacing: 2px;
+  color: white;
+  font-family: var(--naslovi-font);
+}
+
+.me-pic {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(-100px);
+  box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.293);
+}
+
+.project-link-header {
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+  font-family: var(--naslovi-font);
+  font-size: 22px;
+  color: white;
+  letter-spacing: 8px;
+}
+
+.text-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-section {
+  background-color: #333;
+  padding: 60px 0;
+}
+
+.project-headline {
+  text-align: center;
+  font-family: var(--naslovi-font);
+  font-size: 45px;
+  color: white;
+  letter-spacing: 8px;
+  padding: 40px 0;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  justify-content: space-evenly;
+}
+
+.project-container {
+  width: 100%;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.596);
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.project-title {
+  text-align: center;
+  font-family: var(--naslovi-font);
+  color: white;
+  font-size: 22px;
+  margin: 30px;
+  letter-spacing: 8px;
+}
+
+.website-img {
+  width: 100%;
+  max-height: 410px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.project-text {
+  color: white;
+  margin: 40px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.go-to-website {
+  color: white;
+  display: block;
+  text-align: center;
+
+  font-size: 22px;
+  padding: 10px;
+  width: 50%;
+  letter-spacing: 8px;
+  margin: 30px auto;
+  transition: 0.4s ease-in-out;
+}
+
+.go-to-website:hover {
+  transition: 0.4s ease-in-out;
+  box-shadow: 2px 2px 8px white;
+}
+
+.about-me {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.about-me-cotainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 750px;
+
+  position: relative;
+}
+
+.me-pic-second {
+  max-width: 300px;
+  position: absolute;
+  top: 100px;
+  right: 140px;
+  box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.293);
+  opacity: 0;
+  transform: translateY(-180px);
+}
+
+.about-me-title {
+  position: absolute;
+  left: 0;
+  top: 139px;
+  width: 1100px;
+  background-color: white;
+  color: #333;
+  height: 55px;
+  padding: 10px 20px;
+  font-family: var(--naslovi-font);
+  font-size: 30px;
+  letter-spacing: 8px;
+  box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.293);
+  opacity: 0;
+  transform: translateX(-180px);
+}
+
+.about-me-text-container {
+  position: absolute;
+  bottom: 0;
+  max-width: 750px;
+}
+
+.about-me-text {
+  color: white;
+  margin: 20px 20px 40px 0;
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-family: var(--naslovi-font);
+}
+.transform-opacity-acctive {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease;
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text-5-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+.contact-me-text {
+  text-align: center;
+  color: white;
+  margin: 20px 20px 40px 0;
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-family: var(--naslovi-font);
+  transition: 1s ease;
+}
+
+.contact-me-link:hover {
+  color: rgba(90, 90, 238, 0.363);
+  transition: 1s ease-in-out;
+}
+
+.footer {
+  color: black;
+}
+
+.footer-title {
+  padding: 50px;
+  font-family: var(--naslovi-font);
+  letter-spacing: 8px;
+  font-size: 22px;
+  background: rgb(143, 137, 137);
+}
+
+.position-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  max-width: 1920px;
+  width: 100%;
+  height: 95px;
+  border-bottom: 1px solid white;
+}
