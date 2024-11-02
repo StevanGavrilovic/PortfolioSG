@@ -1,314 +1,489 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, stevan gavrilovic portfolio, stevan gavrilovic"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,  maximum-scale=1.0"
     />
-    <meta name="author" content="Portfolio website" />
-
+    <title>Stevan Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script defer src="js.js"></script>
-
-    <title>Stevan Gavrilovic - Portfolio</title>
+    <script defer="" type="module" src="script.js"></script>
+    <title>Stevan Portfolio</title>
+    <meta name="author" content="Stevan Gavrilovic" />
+    <meta name="revisit-after" content="1 days" />
+    <meta http-equiv="refresh" content="600" />
   </head>
-
   <body>
-    <div class="all">
-      <nav class="navigation navigation-tb-mm">
-        <div class="logo-container">
-          <li class="logo">Stevan Gavrilovic</li>
+    <div class="main-container">
+      <div class="basic-info-container">
+        <div class="info-container pic-info-container">
+          <img
+            class="portfolio-picture"
+            src="stevan.JPG.png"
+            alt="Portfolio-picture"
+          />
+          <div class="info">
+            <h2 class="name">Stevan Gavrilovic</h2>
+            <img class="logo-pic" src="sg-logo.png" alt="" />
+            <h3 class="skill-info">Front-end Deweloper</h3>
+          </div>
         </div>
-        <div class="list-container">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#section-1">Home</a>
+        <div class="contact-info-container">
+          <div class="icons-container">
+            <a href=""><i class="fas fa-envelope-open basic-icon"></i></a>
+            <div class="information-container">
+              <p class="information-title">Email</p>
+              <a href="#" class="information-links">Click</a>
+            </div>
+          </div>
+          <div class="icons-container">
+            <a href=""><i class="fas fa-mobile basic-icon"></i></a>
+            <div class="information-container">
+              <p class="information-title">Phone</p>
+              <a href="#" class="information-links">+381 63 352347</a>
+            </div>
+          </div>
+          <div class="icons-container">
+            <a href="" aria-disabled="true">
+              <i class="fas fa-birthday-cake basic-icon"></i
+            ></a>
+            <div class="information-container">
+              <p class="information-title">Birthday</p>
+              <a href="#" class="information-links"> Agust 14, 1991</a>
+            </div>
+          </div>
+          <div class="icons-container">
+            <a href=""><i class="fas fa-map-marker-alt basic-icon"></i></a>
+            <div class="information-container">
+              <p class="information-title">Location</p>
+              <a href="#" class="information-links"
+                >Serbia <br />
+                11000 Belgrade</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contact-icons-container">
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p class="show-info">Show info</p>
+      </div>
+      <div class="project-container">
+        <div class="window active">
+          <div class="project-information-container">
+            <h2 class="project-title main-title">About Me</h2>
+            <p class="project-info-tekst">
+              I'm a self-taught programmer from Belgrade. For several months
+              now, I have been pushing myself beyond my limits with the desire
+              to learn new things in order to become a successful programmer. I
+              am currently studying for a front-end developer. My passion is to
+              make awesome stuff and also coding.
+            </p>
+            <p class="project-info-tekst">
+              I can say for myself that I'm a very professional and resourceful
+              person, full of new ideas and aspirations for advancement in every
+              aspect. I am very detailed in my work, responsible, and organized
+              in all aspects of the job. I'm ready to pass beyond my current
+              limits and learn new stuff, and also my career goals are to
+              improve my knowledge and skills through practice.
+            </p>
+          </div>
+          <div class="project-information-container">
+            <h2 class="project-title">What can I do</h2>
+            <div class="project-info-containers">
+              <div class="skils-container">
+                <i class="fas fa-paint-brush"></i>
+                <div class="skils-container-info">
+                  <h3>Web design</h3>
+                  <p>
+                    Web design crafted with attention to detail and dedication.
+                  </p>
+                </div>
+              </div>
+              <div class="skils-container">
+                <i class="fas fa-laptop-code"></i>
+
+                <div class="skils-container-info">
+                  <h3>Web dewelopment</h3>
+                  <p>
+                    Web development built with precision and commitment to
+                    quality.
+                  </p>
+                </div>
+              </div>
+              <div class="skils-container">
+                <i class="fas fa-cubes"></i>
+                <div class="skils-container-info">
+                  <h3>Data manipulation</h3>
+                  <p>Data manipulation handled with accuracy and efficiency.</p>
+                </div>
+              </div>
+              <div class="skils-container">
+                <i class="fas fa-mobile"></i>
+                <div class="skils-container-info">
+                  <h3>Responsive web dewelopment</h3>
+                  <p>
+                    Responsive web development ensuring a smooth experience on
+                    all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-information-container">
+            <h2 class="project-title">Skills that I use</h2>
+            <div class="project-info-containers skills-container">
+              <div class="scroll-container">
+                <div class="endoresments-container">
+                  <i class="fab fa-js"></i>
+                  <h3 class="endoresment-title">JavaScript</h3>
+                  <p class="endoresment-tekst">
+                    I have been using JavaScript for three years and
+                    continuously improving my skills.
+                  </p>
+                </div>
+                <div class="endoresments-container">
+                  <i class="fab fa-css3-alt"></i>
+                  <h3 class="endoresment-title">Css</h3>
+                  <p class="endoresment-tekst">
+                    CSS is something I enjoy working with to create new layouts
+                    and designs.
+                  </p>
+                </div>
+                <div class="endoresments-container">
+                  <i class="fab fa-node-js"></i>
+                  <h3 class="endoresment-title">Node Js</h3>
+                  <p class="endoresment-tekst">
+                    Node.js is something I plan to learn in the future.
+                  </p>
+                </div>
+                <div class="endoresments-container">
+                  <img src="regex.png" alt="" />
+                  <h3 class="endoresment-title">Regular Expressions</h3>
+                  <p class="endoresment-tekst">
+                    I have been using regular expressions to handle complex text
+                    patterns, making data extraction and validation efficient.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-information-container">
+            <h2 class="project-title">Clients</h2>
+            <div class="project-info-containers clients-container">
+              <div class="client-img-container">
+                <a href="">
+                  <img
+                    class="client-img"
+                    src="Libero ljubicasta.png"
+                    alt="Client img"
+                  />
+                </a>
+              </div>
+              <div class="client-img-container">
+                <a href="">
+                  <img
+                    class="client-img"
+                    src="Ljubav je u kosi.png"
+                    alt="Client img"
+                  />
+                </a>
+              </div>
+              <div class="client-img-container">
+                <a href="">
+                  <img class="client-img" src="platinum.png" alt="Client img" />
+                </a>
+              </div>
+              <div class="client-img-container">
+                <a href="">
+                  <img class="client-img" src="zak.logo.png" alt="Client img" />
+                </a>
+              </div>
+              <div class="client-img-container">
+                <a href="">
+                  <img
+                    class="client-img"
+                    src="Travel Klub.png"
+                    alt="Client img"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="window">
+          <div class="project-information-container">
+            <h2 class="project-title main-title">Resume</h2>
+            <div class="experience-container">
+              <div class="work-container">
+                <div class="title-container">
+                  <p><i class="fas fa-hammer"></i></p>
+                  <h3 class="project-title">Experience</h3>
+                </div>
+                <ol class="experience-list">
+                  <li class="experience-item">
+                    <h4 class="experience-item-title">
+                      Kuehne Nagel, Belgrade
+                      <span class="titule">- E-invoice specialist</span>
+                    </h4>
+                    <p class="experience-item-period">2022 - Present</p>
+                    <p class="experience-item-text">
+                      Utilizing my problem-solving skills to identify and solve
+                      errors in e-invoice processing and ensure seamless
+                      operations. Actively developing new functionality to
+                      expand channels and enhance efficiency, leveraging my
+                      expertise in utilizing regular expressions.
+                    </p>
+                  </li>
+                  <li class="experience-item">
+                    <h4 class="experience-item-title">
+                      Freelancing
+                      <span class="titule">- Front-end web developer</span>
+                    </h4>
+                    <p class="experience-item-period">2022 - Present</p>
+                    <p class="experience-item-text">
+                      Developing websites and maintaining the user interface.
+                      Creating tools that improve site interaction regardless of
+                      the browser. Implementing responsive design to all
+                      devices.
+                    </p>
+                  </li>
+                  <li class="experience-item">
+                    <h4 class="experience-item-title">
+                      Military Shop, Belgrade
+                      <span class="titule">- Data administrator</span>
+                    </h4>
+                    <p class="experience-item-period">2020 - 2021</p>
+                    <p class="experience-item-text">
+                      Entering sales orders in the shipment delivery program
+                      (Bex, Postexpress, Word).Contact with customers on daly
+                      basis and our sales team.Daily analysis of sold
+                      items.Control of inventory levels and support to supply
+                      chain
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="experience-container">
+              <div class="work-container">
+                <div class="title-container">
+                  <p><i class="fas fa-book-open"></i></p>
+                  <h3 class="project-title">Education</h3>
+                </div>
+                <ol class="experience-list">
+                  <li class="experience-item">
+                    <h4 class="experience-item-title">
+                      The Complete JavaScript Course 2021
+                      <span class="titule"> - From Zero to Expert</span>
+                    </h4>
+                    <p class="experience-item-period">2021 - 2022</p>
+                    <p class="experience-item-text">
+                      Through this course, I gained the knowledge to create a
+                      wide range of frontend web development projects. The
+                      information provided was invaluable and has been extremely
+                      helpful in advancing my skills.
+                    </p>
+                  </li>
+                  <li class="experience-item">
+                    <h4 class="experience-item-title">
+                      Build Responsive Real-World
+                      <span class="titule">- Websites with HTML and CSS</span>
+                    </h4>
+                    <p class="experience-item-period">2021 - 2022</p>
+                    <p class="experience-item-text">
+                      This course gave me a solid foundation in CSS and HTML,
+                      enabling me to build visually engaging and responsive
+                      websites. The insights and techniques I learned were
+                      instrumental in enhancing my frontend development
+                      abilities and have been essential for my growth in this
+                      field.
+                    </p>
+                  </li>
+                  <li class="experience-item">
+                    <h4 class="experience-item-title">
+                      Saobracajna Skola, Beograd
+                      <span class="titule">- Tehnicar za motorna vozila</span>
+                    </h4>
+                    <p class="experience-item-period">2009 - 2013</p>
+                    <p class="experience-item-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellendus reprehenderit omnis ducimus ipsa ab magni quam
+                      dicta laudantium veritatis quas!
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="window">
+          <div class="project-information-container">
+            <h2 class="project-title main-title">My Work</h2>
+            <div class="work-projects-container">
+              <div class="website-container">
+                <a
+                  class="website-link"
+                  target="_blank"
+                  href="https://platinumserbia.rs/index.php"
+                >
+                  <img
+                    class="webiste-img"
+                    src="website-img/platinum-website-img.png"
+                    alt="Platinum.rs"
+                  />
+                  <i class="far fa-eye eye-icon"></i>
+                </a>
+                <div class="website-test">
+                  <h3 class="website-title">PLATINUM.rs</h3>
+                  <p class="website-text">Hrana za pse i mačke</p>
+                </div>
+              </div>
+              <div class="website-container">
+                <a class="website-link" target="_blank" href="https://zak.rs/">
+                  <img
+                    class="webiste-img"
+                    src="website-img/zak-website-img.png"
+                    alt="Žak.rs"
+                  />
+                  <i class="far fa-eye eye-icon"></i>
+                </a>
+                <div class="website-test">
+                  <h3 class="website-title">Žak d.o.o.</h3>
+                  <p class="website-text">
+                    ŽAK d.o.o. Beograd je fir ma sa jasnom vizijom šta će se
+                    dešavati na tržištu ugostiteljske opreme.
+                  </p>
+                </div>
+              </div>
+              <div class="website-container">
+                <a
+                  class="website-link"
+                  target="_blank"
+                  href="https://liberoteam.rs/index.php"
+                >
+                  <img
+                    class="webiste-img"
+                    src="website-img/libero-website-img.png"
+                    alt="Libero Team"
+                  />
+                  <i class="far fa-eye eye-icon"></i>
+                </a>
+                <div class="website-test">
+                  <h3 class="website-title">Libero Team d.o.o.</h3>
+                  <p class="website-text">
+                    Libero team d.o.o. - Doda ci za kolače: šlag krem, šlag pena
+                    i mleveni proizvodi
+                  </p>
+                </div>
+              </div>
+              <div class="website-container">
+                <a
+                  class="website-link"
+                  target="_blank"
+                  href="https://ljubavjeukosi.rs/"
+                >
+                  <img
+                    class="webiste-img"
+                    src="website-img/ljubavjeukosi-website-img.png"
+                    alt=""
+                  />
+                  <i class="far fa-eye eye-icon"></i>
+                </a>
+                <div class="website-test">
+                  <h3 class="website-title">Frizerski salon Ivana</h3>
+                  <p class="website-text">
+                    Feniranje, manikir, notki , frenc, frizer, pedikir
+                  </p>
+                </div>
+              </div>
+              <div class="website-container">
+                <a
+                  class="website-link"
+                  target="_blank"
+                  href="https://travelklub.rs/"
+                >
+                  <img
+                    class="webiste-img"
+                    src="website-img/traveklab-website-img.png"
+                    alt=""
+                  />
+                  <i class="far fa-eye eye-icon"></i>
+                </a>
+                <div class="website-test">
+                  <h3 class="website-title">Travel Klub</h3>
+                  <p class="website-text">
+                    Travel Klub je osnovan u okviru Organizacije Stari grad za
+                    potrebe putovanja članova u zemlji i inostranstvu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="window">
+          <div class="project-information-container">
+            <h2 class="project-title main-title">Contact me</h2>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90569.97204231196!2d20.340197443227137!3d44.81521572500784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2sBelgrade!5e0!3m2!1sen!2srs!4v1730558152813!5m2!1sen!2srs"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="contact-form">
+              <h2 class="contact-title">Contact form</h2>
+              <form action="">
+                <div class="input-container">
+                  <input type="name" placeholder="Full name" />
+                  <input type="email" placeholder="Email" />
+                </div>
+
+                <textarea
+                  name="message"
+                  class="form-input"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" disabled>
+                  <i class="fas fa-paper-plane"></i> <span>Send message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <ul class="navigation-container">
+            <li class="navigation-list">
+              <p href="" class="navigation-link active-color">About</p>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-2">Responsive</a>
+            <li class="navigation-list">
+              <p href="" class="navigation-link">Resume</p>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-3">Projects</a>
+            <li class="navigation-list">
+              <p href="" class="navigation-link">Webistes</p>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-4">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-5">Contact me!</a>
+            <li class="navigation-list">
+              <p href="" class="navigation-link">Contact</p>
             </li>
           </ul>
         </div>
-        <div class="menu-container">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-
-      <section class="section-1" id="section-1">
-        <div class="left-box box">
-          <h2 class="text text-0">Explore my Portfolio site</h2>
-          <h2 class="text text-1">
-            <i class="fas fa-solid fa-arrow-down"></i>
-          </h2>
-          <h2 class="text text-2">Explore my Portfolio site</h2>
-          <h2 class="text text-3">
-            <i class="fas fa-solid fa-arrow-down"></i>
-          </h2>
-
-          <h2 class="text text-4">Explore my Portfolio site</h2>
-
-          <h2 class="text text-5">
-            <i class="fas fa-solid fa-arrow-down"></i>
-          </h2>
-
-          <h2 class="text text-6">Explore my Portfolio site</h2>
-
-          <h2 class="text text-7">
-            <i class="fas fa-solid fa-arrow-down"></i>
-          </h2>
-
-          <h2 class="text text-8">Explore my Portfolio site</h2>
-
-          <h2 class="text text-9">
-            <i class="fas fa-solid fa-arrow-down"></i>
-          </h2>
-
-          <a class="fromLeft" href="">See what I can do for you, click me! </a>
-        </div>
-        <div class="right-box box">
-          <h1 class="ml2">Hey, i'm <strong>Stevan</strong>,</h1>
-          <p>
-            Front-end web <strong>developer</strong> and
-            <strong>designer</strong> from Belgrade.
-          </p>
-          <p>
-            And I can create awesome websites. Take a look, and see yourself
-          </p>
-        </div>
-      </section>
-      <div class="container">
-        <section class="section-2" id="section-2">
-          <div class="title-container">
-            <div>
-              <h1>You want</h1>
-            </div>
-            <div class="text-container">
-              <h1 class="ml4">
-                <span class="letters letters-1">reponsive</span>
-                <span class="letters letters-2">adaptable</span>
-                <span class="letters letters-3">animated</span>
-              </h1>
-            </div>
-            <div><h1>website?</h1></div>
-          </div>
-          <p>No problem!</p>
-          <div class="responsive-container">
-            <div class="mobile"></div>
-            <div class="pc"></div>
-            <div class="tablet"></div>
-          </div>
-        </section>
-        <section class="section-3" id="section-3">
-          <h1 class="ml5">
-            <span class="text-wrapper">
-              <span class="line line1"></span>
-              <span class="letters">What i do ?</span>
-            </span>
-          </h1>
-
-          <p>
-            I enjoy building everything, from small projects to big projects.
-          </p>
-          <p>Hover or click on project, and see yourself!</p>
-          <div class="card-table">
-            <div class="card">
-              <div class="card-content card-0">
-                <div class="card-face card-front card-front-one">
-                  <div class="card-header">
-                    <h1>Clone website</h1>
-                  </div>
-                </div>
-                <div class="card-face card-back card-back-one">
-                  <div class="card-body"></div>
-                  <button>Learn more</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content card-1">
-                <div class="card-face card-front card-front-two">
-                  <div class="card-header">
-                    <h1>
-                      <h1>Design website</h1>
-                    </h1>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      <!--AKO TREBA NEKI TEXT-->
-                    </p>
-                  </div>
-                </div>
-                <div class="card-face card-back card-back-three">
-                  <div class="card-body">
-                    <h1>
-                      <!-- NAZIV SAJTA-->
-                    </h1>
-                    <p>
-                      <!--AKO TREBA NEKI TEXT-->
-                    </p>
-                  </div>
-                  <button>Learn more, soon!</button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content card-2">
-                <div class="card-face card-front card-front-three">
-                  <div class="card-header">
-                    <h1>Dynamic Websites</h1>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      <!--AKO TREBA NEKI TEXT-->
-                    </p>
-                  </div>
-                </div>
-                <div class="card-face card-back card-back-three">
-                  <div class="card-body">
-                    <h1>
-                      <!-- NAZIV SAJTA-->
-                    </h1>
-                    <p>
-                      <!--AKO TREBA NEKI TEXT-->
-                    </p>
-                  </div>
-                  <button>Learn more, soon!</button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content card-3">
-                <div class="card-face card-front card-front-four">
-                  <div class="card-header">
-                    <h1>
-                      <h1>Portfolio Websites</h1>
-                    </h1>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      <!--AKO TREBA NEKI TEXT-->
-                    </p>
-                  </div>
-                </div>
-                <div class="card-face card-back card-back-three">
-                  <div class="card-body">
-                    <h1>
-                      <!-- NAZIV SAJTA-->
-                    </h1>
-                    <p>
-                      <!--AKO TREBA NEKI TEXT-->
-                    </p>
-                  </div>
-                  <button>Learn more, soon!</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-4" id="section-4">
-          <h1 class="ml3">Things you need to know about me</h1>
-
-          <div class="about-me-container">
-            <p>
-              I'm a self-taught programmer from Serbia Belgrade. For several
-              months now,
-            </p>
-            <p>
-              I have been pushing myself beyond my limits with the desire to
-              learn new things in order to become a successful programmer.
-            </p>
-            <p>
-              I am currently freelancing as a front-end developer.I'm ready to
-              pass beyond my current limits and learn new stuff, and also my
-              career goals are to improve my knowledge and skills through work
-              and practice.
-            </p>
-
-            <ul class="skils-container">
-              <li class="skils-item">
-                <p>The skill I possess:</p>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
-                  alt=""
-                />
-              </li>
-              <li class="skils-item">
-                <p>The skill I possess:</p>
-                <img
-                  src="data:image/png;base64,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"
-                  alt=""
-                />
-              </li>
-              <li class="skils-item">
-                <p>The skill I possess:</p>
-                <img
-                  src="https://fedojo.com/wp-content/uploads/2019/03/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png"
-                  alt=""
-                />
-              </li>
-              <li class="skils-item">
-                <p>The skill I will improve:</p>
-                <img
-                  src="data:image/jpeg;base64,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"
-                  alt=""
-                />
-              </li>
-              <li class="skils-item">
-                <p>The skill I will improve:</p>
-                <img
-                  src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1e0d62f445e6448af1e125f5702c8227/reactjs-development-services.png"
-                  alt=""
-                />
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="section-5" id="section-5">
-          <h1 class="ml6">How to contact me?!</h1>
-
-          <div class="text-5-container">
-            <p>
-              Thats easy, just send me e-mail at:
-              <strong>maximumeffortjs@gmail.com</strong>
-            </p>
-            <p>
-              Or you can contact me at
-              <a
-                class="contact-me-link"
-                href="https://www.linkedin.com/in/stevan-g-5ba7431b0/"
-                >LinkedIn</a
-              >
-            </p>
-          </div>
-        </section>
       </div>
     </div>
-    <footer class="footer">
-      <h1>
-        This site is used for learning and portfolio purposes. Don't use this.
-        Don't claim it as your own product.
-      </h1>
-    </footer>
   </body>
 </html>
