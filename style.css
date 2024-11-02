@@ -117,7 +117,7 @@ body {
 .contact-info-container,
 .project-information-container {
   margin: 0 var(--margin);
-  padding-top: 25px;
+  padding-top: 20px;
 }
 .pic-info-container {
   display: flex;
