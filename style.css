@@ -756,6 +756,12 @@ textarea:focus {
     justify-content: start;
     margin: 20px 0;
   }
+  .website-test {
+    padding: 20px 20px 0 10px;
+  }
+  .website-title {
+    padding-top: 0px;
+  }
   .work-projects-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -766,11 +772,12 @@ textarea:focus {
     right: 0;
     background: var(--linear-gradient);
     backdrop-filter: var(--backdrop-filter);
-    border-radius: 10px;
+
     border: var(--border);
     box-shadow: var(--box-shadow);
     padding: 5px 25px;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
     color: red;
     font-weight: bolder;
   }
@@ -901,7 +908,7 @@ textarea:focus {
   }
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 420px) {
   .info > * {
     margin-bottom: 10px;
   }

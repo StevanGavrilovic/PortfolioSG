@@ -18,13 +18,15 @@ navigationButtons.forEach((button, index) => {
     });
     navigationLinks.forEach((el) => {
       el.classList.remove("active-color");
-      window.scrollTo(0, 0);
-      contactIconsContainers.classList.remove("active-icons-mobile");
-      contactInfoContainer.classList.remove("active-info-mobile");
-      contactIconsContainers.classList.remove("active-icons");
-      contactInfoContainer.classList.remove("active-info");
-      contactIconsContainers.style.opacity = "0";
-      contactInfoContainer.style.opacity = "0";
+      if (width < 1020) {
+        window.scrollTo(0, 0);
+        contactIconsContainers.classList.remove("active-icons-mobile");
+        contactInfoContainer.classList.remove("active-info-mobile");
+        contactIconsContainers.classList.remove("active-icons");
+        contactInfoContainer.classList.remove("active-info");
+        contactIconsContainers.style.opacity = "0";
+        contactInfoContainer.style.opacity = "0";
+      }
     });
 
     windows[index].classList.add("active");
