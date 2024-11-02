@@ -717,11 +717,16 @@ textarea:focus {
     -webkit-backdrop-filter: 1px;
     background-color: hsl(240, 2%, 12%);
   }
+  .pic-info-container {
+    border-bottom: none;
+  }
+
   .contact-icons-container {
     margin: 0;
   }
   .contact-info-container {
     padding: 0;
+    border-top: 1px solid var(--border-color-edge);
   }
   .contact-info-container,
   .contact-icons-container {
@@ -893,5 +898,15 @@ textarea:focus {
     height: 21px;
     transition: 0.5s ease;
     margin: 20px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .info > * {
+    margin-bottom: 10px;
+  }
+  .info {
+    align-items: start;
+    justify-content: end;
   }
 }
