@@ -8,7 +8,16 @@ let contactIconsContainers = document.querySelector(".contact-icons-container");
 let contactInfoContainer = document.querySelector(".contact-info-container");
 let width = innerWidth;
 
-console.log(width);
+let resetSettings = () => {
+  window.scrollTo(0, 0);
+  contactIconsContainers.classList.remove(
+    "active-icons-mobile",
+    "active-icons"
+  );
+  contactInfoContainer.classList.remove("active-info-mobile", "active-info");
+  contactIconsContainers.style.opacity = "0";
+  contactInfoContainer.style.opacity = "0";
+};
 
 navigationButtons.forEach((button, index) => {
   button.addEventListener("click", function (e) {
@@ -19,51 +28,37 @@ navigationButtons.forEach((button, index) => {
     navigationLinks.forEach((el) => {
       el.classList.remove("active-color");
       if (width < 1020) {
-        window.scrollTo(0, 0);
-        contactIconsContainers.classList.remove("active-icons-mobile");
-        contactInfoContainer.classList.remove("active-info-mobile");
-        contactIconsContainers.classList.remove("active-icons");
-        contactInfoContainer.classList.remove("active-info");
-        contactIconsContainers.style.opacity = "0";
-        contactInfoContainer.style.opacity = "0";
+        resetSettings();
       }
     });
-
     windows[index].classList.add("active");
     setTimeout(() => {
       windows[index].style.opacity = "1";
     }, "100");
-
     navigationLinks[index].classList.add("active-color");
   });
 });
 
 if (width < 580) showInfoButton.innerHTML = "Show";
 
-showInfoButton.addEventListener("click", function (e) {
-  if (width > 580) {
-    contactIconsContainers.classList.toggle("active-icons");
-    contactInfoContainer.classList.toggle("active-info");
-    if (contactInfoContainer.classList.contains("active-info")) {
-      setTimeout(() => {
-        contactIconsContainers.style.opacity = "1";
-        contactInfoContainer.style.opacity = "1";
-      }, 300);
-    } else {
-      contactIconsContainers.style.opacity = "0";
-      contactInfoContainer.style.opacity = "0";
-    }
+showInfoButton.addEventListener("click", () => {
+  const isMobile = width <= 580;
+  const iconsClass = isMobile ? "active-icons-mobile" : "active-icons";
+  const infoClass = isMobile ? "active-info-mobile" : "active-info";
+
+  contactIconsContainers.classList.toggle(iconsClass);
+  contactInfoContainer.classList.toggle(infoClass);
+
+  const isActive = contactInfoContainer.classList.contains(infoClass);
+  const opacityValue = isActive ? "1" : "0";
+
+  if (isActive) {
+    setTimeout(() => {
+      contactIconsContainers.style.opacity = opacityValue;
+      contactInfoContainer.style.opacity = opacityValue;
+    }, 300);
   } else {
-    contactIconsContainers.classList.toggle("active-icons-mobile");
-    contactInfoContainer.classList.toggle("active-info-mobile");
-    if (contactInfoContainer.classList.contains("active-info-mobile")) {
-      setTimeout(() => {
-        contactIconsContainers.style.opacity = "1";
-        contactInfoContainer.style.opacity = "1";
-      }, 300);
-    } else {
-      contactIconsContainers.style.opacity = "0";
-      contactInfoContainer.style.opacity = "0";
-    }
+    contactIconsContainers.style.opacity = opacityValue;
+    contactInfoContainer.style.opacity = opacityValue;
   }
 });
